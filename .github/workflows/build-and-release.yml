@@ -78,13 +78,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download Server Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: server
           path: ./server/build
 
       - name: Download Client Artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: client
           path: ./client/dist
